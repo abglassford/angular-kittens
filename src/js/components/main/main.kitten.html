@@ -1,0 +1,17 @@
+<div class="container">
+  <form name="kittenForm" class="kittenForm" ng-submit="mainCtrl.addKitten(cat)">
+    <div class="input-field">
+      <label for="name">Name</label>
+      <input type="text" name="name" ng-model="cat.name">
+    </div>
+    <div class="input-field">
+      <label for="image">Image</label>
+      <input type="url" name="name" ng-model="cat.image">
+    </div>
+    <div class="input-field">
+      <label for="bio">Bio</label>
+      <input type="text" name="bio" ng-model="cat.bio">
+    </div>
+    <button class="wave-effect waves-light btn" type="submit">Create Kitten</button>
+  </form>
+</div>

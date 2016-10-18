@@ -1,0 +1,17 @@
+<div class="kittens" >
+  <ul>
+    <li ng-repeat="kitten in kittenList">
+      <div class="row card-panel teal white-text">
+        <div class="photo col m4">
+          <img ng-src={{kitten.image}} alt="kitten" />
+        </div>
+        <div class="info col m8">
+          <h2>Name: {{kitten.name}}</h2>
+          <h3>Likes: {{kitten.likes}}</h3>
+          <p>Bio: {{kitten.bio}}</p>
+          <span></span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
