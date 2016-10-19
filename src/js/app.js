@@ -8,7 +8,8 @@
     .module('kittens', [
       'ngRoute',
       'kittens.config',
-      'kittens.components.main'
+      'kittens.components.main',
+      'kittens.components.kitten'
     ]);
 
 })();

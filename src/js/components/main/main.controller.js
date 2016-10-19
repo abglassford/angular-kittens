@@ -1,30 +1,15 @@
 (function() {
 
-  // 'use strict';
+  'use strict';
 
   angular
-    .module('kittens.components.main', [])
+    .module('kittens.components.main', ['cats'])
     .controller('mainController', mainController);
 
-  mainController.$inject = ['$scope', '$rootScope', '$location'];
+  mainController.$inject = ['$location', 'kittenService'];
 
-  function mainController($scope, $rootScope, $location) {
-
-    this.addKitten = function (kitten) {
-      console.log('hello');
-      $rootScope.kittenList.push(kitten);
-      $location.path('/');
-    };
-
-    if (!$rootScope.kittenList) {
-      $rootScope.kittenList = [{
-        name: 'Grumpy',
-        image: 'http://placekitten.com/200/300',
-        bio: `I'm a kitten`,
-        likes: 102982
-      }];
-    }
-
+  function mainController($location, kittenService) {
+    this.kittenList = kittenService.kittenList
   }
 
 })();
