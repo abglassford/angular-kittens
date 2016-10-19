@@ -18,7 +18,7 @@
       controller: 'mainController',
       controllerAs: 'mainCtrl'
     })
-    .otherwise('/')
+    .otherwise('/');
   }
 
 })();

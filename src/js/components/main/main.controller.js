@@ -1,6 +1,6 @@
 (function() {
 
-  'use strict';
+  // 'use strict';
 
   angular
     .module('kittens.components.main', [])
@@ -12,9 +12,9 @@
 
     this.addKitten = function (kitten) {
       console.log('hello');
-      $rootScope.kittenList.push(kitten)
-      $location.path('/')
-    }
+      $rootScope.kittenList.push(kitten);
+      $location.path('/');
+    };
 
     if (!$rootScope.kittenList) {
       $rootScope.kittenList = [{
@@ -22,7 +22,7 @@
         image: 'http://placekitten.com/200/300',
         bio: `I'm a kitten`,
         likes: 102982
-      }]
+      }];
     }
 
   }
