@@ -14,6 +14,7 @@
         name: kitten.name,
         image: kitten.image,
         bio: kitten.bio,
+        comments: [],
         likes: 0,
         id: kittenService.kittenList.length + 1
       }

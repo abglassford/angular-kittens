@@ -8,13 +8,12 @@
 
   function KittenService () {
 
-    this.testMessage = 'Passing';
-
     if (!this.kittenList) {
       this.kittenList = [{
         name: 'Grumpy',
         image: 'http://placekitten.com/200/300',
         bio: `I'm a kitten`,
+        comments: ['This cat is cute', 'My cat is cuter'],
         likes: 10,
         id: 1
       }];

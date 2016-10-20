@@ -1,3 +1,16 @@
-<div class="">
+<div class="card-panel teal">
+  <h1 class="white-text">{{commentsCtrl.kitten.name}}</h1>
+  <div class="comments card-panel yellow" ng-repeat="comment in commentsCtrl.kitten.comments">
+    {{comment}}
+  </div>
   {{commentsCtrl.test}}
+  <button class="wave effect waves-light btn teal" type="button" name="addComment" ng-click="commentsCtrl.showFn()">Add Comment</button>
+  <div class="card-panel yellow" ng-show="commentsCtrl.show">
+    <form name="catComment" ng-submit="commentsCtrl.addComment(commentsCtrl.comment)">
+      <label for="comment">Comment</label>
+      <input type="text" name="comment" ng-model="commentsCtrl.comment">
+      <button class="wave effect waves-light btn teal"type="submit" name="button">Create Comment</button>
+    </form>
+
+  </div>
 </div>

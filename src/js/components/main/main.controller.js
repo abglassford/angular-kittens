@@ -10,7 +10,10 @@
 
   function mainController($location, kittenService) {
     this.kittenList = kittenService.kittenList;
-    this.getComments = (id) => $location.path(`/comments/${id}`);
+    this.getComments = (id) => {
+      $location.path(`/comments/${id}`);
+    }
+
   }
 
 })();
