@@ -2,3 +2,16 @@
 .nav-wrapper {
   padding: 0px 10px 0px 10px;
 }
+
+.like {
+  padding-left: 12px;
+  position: relative;
+  bottom: 2px;
+  color: white
+}
+
+.dislike {
+  position: relative;
+  bottom: 2px;
+  color: white
+}

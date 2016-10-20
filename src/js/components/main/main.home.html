@@ -7,7 +7,7 @@
         </div>
         <div class="info col m8">
           <h2>Name: {{kitten.name}}</h2>
-          <h3>Likes: {{kitten.likes}}</h3>
+          <h3>Likes: <a ng-click="mainCtrl.dislike(kitten.id)"><i class="material-icons dislike">thumb_down</i></a> {{kitten.likes}}<a ng-click="mainCtrl.like(kitten.id)"><i class="material-icons like">thumb_up</i></a></h3>
           <p>Bio: {{kitten.bio}}</p>
           <a class="wave effect waves-light teal btn" ng-click="mainCtrl.getComments(kitten.id)">View Comments</a>
         </div>

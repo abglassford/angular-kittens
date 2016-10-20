@@ -1,6 +1,6 @@
 (function() {
 
-  'use strict';
+  //'use strict';
 
   angular
     .module('kittens.components.kitten', ['cats'])
@@ -17,7 +17,7 @@
         comments: [],
         likes: 0,
         id: kittenService.kittenList.length + 1
-      }
+      };
       kittenService.kittenList.push(newKitten);
       $location.path('/');
     };
