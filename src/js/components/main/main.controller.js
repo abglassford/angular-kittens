@@ -9,7 +9,8 @@
   mainController.$inject = ['$location', 'kittenService'];
 
   function mainController($location, kittenService) {
-    this.kittenList = kittenService.kittenList
+    this.kittenList = kittenService.kittenList;
+    this.getComments = (id) => $location.path(`/comments/${id}`);
   }
 
 })();

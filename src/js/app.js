@@ -9,7 +9,8 @@
       'ngRoute',
       'kittens.config',
       'kittens.components.main',
-      'kittens.components.kitten'
+      'kittens.components.kitten',
+      'kittens.components.comments'
     ]);
 
 })();

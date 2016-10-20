@@ -3,10 +3,10 @@
 
   angular
     .module('kittens.components.comments', ['cats'])
-    .controller('commentsController', commentsController)
+    .controller('commentsController', commentsController);
 
-    function commentsController () {
-      this.test = 'Success'
-    }
+  function commentsController () {
+    this.test = 'Success';
+  }
 
 }());
